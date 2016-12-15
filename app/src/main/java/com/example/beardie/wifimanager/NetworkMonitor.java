@@ -35,9 +35,7 @@ public class NetworkMonitor extends BroadcastReceiver {
     public ArrayList<String> getScanResult(){
         ArrayList<String> stringList = new ArrayList<String>();
         for(int i = 0; i < scanResultList.size(); i++){
-            stringList.add("SSID: " + scanResultList.get(i).SSID +
-                    "\nBSID: " + scanResultList.get(i).BSSID +
-                    "\nEncryption: " + scanResultList.get(i).capabilities );
+            stringList.add("SSID: " + scanResultList.get(i).SSID);
         }
         return stringList;
     }
